@@ -4,28 +4,6 @@ session_start();
 
 $_SESSION['welcomepage'] = $_SERVER['REQUEST_URI'];
 
-function passError()
-{
-   return $err = "<div style='width: 300px;font-weight:400; line-height:120%;font-family:roboto;height: 90px;
-    background: #f88f8fea;border: 2px solid #ee6161ea; border-radius:10px; text-align:center;
-    font-size:16px;position:relative;color:#8a2424; padding:7px;margin:30px;'>
-    
-    <p>Password should be atleast 8 characters in length and should include
-    at letter, one number, and one special character.</p>
-
-    </div>";
-}
-
-function errorMsg()
-{
-    return $message = "<div style='width: 300px;font-weight:400; line-height:120%;font-family:roboto;height: 90px;
-    background: #f88f8fea;border: 2px solid #ee6161ea; border-radius:10px; text-align:center;
-    font-size:16px;position:relative;left:30%;color:#8a2424; padding:7px;margin:30px;'>
-        
-        <h6>Failed to Sign In. Please fill all fields correctly. Check password</h6>
-
-        </div>";
-}
 
 
 
